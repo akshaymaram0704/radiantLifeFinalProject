@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>Intellectual Wellness</title>
+    <link rel="stylesheet" type="text/css" href="styles_IntellectualWell.css"> 
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 50px auto;
+			max-width: 800px;
+		}
+
+		.box {
+			position: relative;
+			width: 300px;
+			height: 300px;
+			margin: 40px;
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			cursor: pointer;
+			transition: transform 0.2s ease-in-out;
+		}
+
+		.box:hover {
+			transform: scale(1.1);
+		}
+
+		.box img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.description {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 10px;
+			background-color: rgba(255, 255, 255, 0.8);
+			font-size: 14px;
+			line-height: 1.5;
+			text-align: justify;
+			transition: opacity 0.2s ease-in-out;
+			opacity: 0;
+		}
+
+		.box:hover .description {
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+    <header>
+		<h1>Radiant Life</h1>
+		<nav>
+			<ul>
+				<li><a class= "nav-item" href="Index.html">Home</a></li>
+				<li><a class= "nav-item" href="aboutUs.html">About Us</a></li>
+				<li><a class= "nav-item" href="learnMore.html">Learn More</a></li>
+				<li><a class= "nav-item" href="healthy.html">Health Checker</a></li>
+			</ul>
+		</nav>
+	</header>
+    <center>
+	<h1>Intellectual Wellness</h1>
+    </center>
+	<div class="container">
+		<div class="box">
+			<a href=https://science.howstuffworks.com/life/inside-the-mind/human-brain/brain.htm#:~:text=The%20scientific%20study%20of%20the,is%20called%20neuroscience%20or%20neurobiology.>
+				<img src="hacksImages/brainn.jpeg" alt="Science behind the Brain">
+				<div class="description">
+					This resource explains the science behind the brain.
+				</div>
+                <center>
+                <h2>Science behind the Brain</h2>
+                </center>
+               
+			</a>
+		</div>
+		<div class="box">
+			<a href=https://www.progresslifeline.org.uk/news/the-benefit-of-puzzles-for-the-brain/#:~:text=Working%20on%20a%20puzzle%20reinforces,to%20improve%20short%2Dterm%20memory.&text=Puzzles%20increase%20the%20production%20of,as%20we%20solve%20the%20puzzle.>
+				<img src="hacksImages/puzzles.webp" alt="Puzzles make YOU smarter">
+				<div class="description">
+					This link takes you to a site which explains how puzzles help the brain.
+				</div>
+                <center>
+                    <h2>Puzzles make YOU smarter</h2>
+                    </center>
+			</a>
+		</div>
+		<div class="box">
+			<a href="https://www.usa.edu/blog/study-techniques/">
+				<img src="hacksImages/study2.png" alt="Effective study methods">
+				<div class="description">
+					This link takes you to a site with effective study methods.
+				</div>
+                <center>
+                 <h2>Effective study methods</h2>
+                </center>
+			</a>
+		</div>
+		<div class="box">
+			<a href="https://kerlanjobe.org/can-playing-sports-physical-activity-lead-to-a-healthier-brain/">
+				<img src="hacksImages/sports.png" alt="Relationship between excercise and the brain.">
+				<div class="description">
+					This resource explains the positive effect that excercise has on one's brain.
+				</div>
+                <center>
+                    <h2>Relationship between excercise and the brain.</h2>
+                </center>
+			</a>
+		</div>
+	</div>
+	<center>
+		<body>
+		
+			<h1>Take Notes</h1>
+			<form>
+			  <label for="note">Note:</label><br>
+			  <textarea id="note" name="note" rows="4" cols="50"></textarea>
+			</form>
+		  </body>
+			
+	</center>
+	<footer>
+        <p class="footer1">&copy; 2023 RadiantLife All rights reserved.</p>
+        <p class="footer2">By Amrith Mohan and Akshay Maram</p>
+      </footer>
+</body>
+</html>

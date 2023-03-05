@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>Environmental Wellness</title>
+    <link rel="stylesheet" type="text/css" href="styles_EnviromentWell.css"> 
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 50px auto;
+			max-width: 800px;
+		}
+
+		.box {
+			position: relative;
+			width: 300px;
+			height: 300px;
+			margin: 40px;
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			cursor: pointer;
+			transition: transform 0.2s ease-in-out;
+		}
+
+		.box:hover {
+			transform: scale(1.1);
+		}
+
+		.box img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.description {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 10px;
+			background-color: rgba(255, 255, 255, 0.8);
+			font-size: 14px;
+			line-height: 1.5;
+			text-align: justify;
+			transition: opacity 0.2s ease-in-out;
+			opacity: 0;
+		}
+
+		.box:hover .description {
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+    <header>
+		<h1>Radiant Life</h1>
+		<nav>
+			<ul>
+				<li><a class= "nav-item" href="Index.html">Home</a></li>
+				<li><a class= "nav-item" href="aboutUs.html">About Us</a></li>
+				<li><a class= "nav-item" href="learnMore.html">Learn More</a></li>
+				<li><a class= "nav-item" href="healthy.html">Health Checker</a></li>
+			</ul>
+		</nav>
+	</header>
+    <center>
+	<h1>Environmental Wellness</h1>
+    </center>
+	<div class="container">
+		<div class="box">
+			<a href=https://www.un.org/en/desa/5-reasons-you-should-care-about-our-ocean#:~:text=It%20provides%20climate%20regulation%2C%20food,2022%20UN%20Ocean%20Conference%20website.>
+				<img src="hacksImages/ocean.jpeg" alt="Saving Our Water">
+				<div class="description">
+					This resource explains the importance of saving the water bodies on the earth.
+				</div>
+                <center>
+                <h2>Saving our Water</h2>
+                </center>
+               
+			</a>
+		</div>
+		<div class="box">
+			<a href=https://www3.epa.gov/region1/airquality/reducepollution.html#:~:text=Reduce%20the%20number%20of%20trips,powered%20lawn%20and%20garden%20equipment.>
+				<img src="hacksImages/air.webp" alt="Saving the Air">
+				<div class="description">
+					This link takes you to a site which explains the importance of saving the air.
+				</div>
+                <center>
+                    <h2>Saving the Air</h2>
+                    </center>
+			</a>
+		</div>
+		<div class="box">
+			<a href="https://www.pewtrusts.org/en/about/how-we-work/lessons-learned/saving-the-land">
+				<img src="hacksImages/land2.jpeg" alt="Saving Our Land">
+				<div class="description">
+					This link takes you to a site which explains the benefits of saving the land.
+				</div>
+                <center>
+                 <h2>Saving our Land</h2>
+                </center>
+			</a>
+		</div>
+		<div class="box">
+			<a href="https://saveanimalsfacingextinction.org/">
+				<img src="hacksImages/animals.jpeg" alt="Saving Animals">
+				<div class="description">
+					This resource explains the positive effect that saving animals has on the Earth.
+				</div>
+                <center>
+                    <h2>Saving Animals</h2>
+                </center>
+			</a>
+		</div>
+	</div>
+	<center>
+		<body>
+		
+			<h1>Take Notes</h1>
+			<form>
+			  <label for="note">Note:</label><br>
+			  <textarea id="note" name="note" rows="4" cols="50"></textarea>
+			</form>
+		  </body>
+			
+	</center>
+	<footer>
+        <p class="footer1">&copy; 2023 RadiantLife All rights reserved.</p>
+        <p class="footer2">By Amrith Mohan and Akshay Maram</p>
+      </footer>
+</body>
+</html>

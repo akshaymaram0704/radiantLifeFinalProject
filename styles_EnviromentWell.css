@@ -1,0 +1,141 @@
+.menu {
+  display:flex;
+  justify-content: space-evenly;
+  background-color: black;
+  font-size: 30px;
+  font-family: Impact
+  font-weight: 400;
+  color: white;
+}
+body {
+  background-color:blanchedalmond;
+}
+.grid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+.grid img {
+  border: 2px solid black;
+  border-radius: 50px;
+}
+.origami {
+  border-radius: 20px;
+  background-color: white;
+  margin: 20px;
+
+  width: 310px;
+  font-family: fantasy;
+}
+
+ul {
+  list-style-type: none;
+  background-color: blanchedalmond;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  text-decoration: none;
+  display: block;
+  padding: 18px 24px;
+  color: black;
+}
+
+li a:hover {
+  font-size: 20px;
+}
+
+.bodyimg{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.logo-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin: auto;
+}
+section a:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for images */
+img:hover {
+  transform: rotate(5deg) scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #0066cc;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	background-color: #251605;
+  }
+  footer p {
+	color: white;
+  }
+
+  .footer1{
+	padding-left: 0.5rem
+  }
+  .footer2{
+	padding-left: 61rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blanchedalmond;
+    padding: 20px;
+    font-family: 'Shantell-Sans', sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background:blanchedalmond;
+  }
+  
+  nav li {
+    margin-right: 10px;
+    background: blanchedalmond;
+  }
+  
+  nav .nav-item {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  nav .nav-item:hover {
+    background-color: #333;
+    color: blanchedalmond;
+  }

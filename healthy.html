@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meal Healthiness Checker</title>
+  <link rel="stylesheet" type="text/css" href="styles_Bmi.css"> 
+</head>
+
+<header>
+  <h1>Radiant Life</h1>
+  <nav>
+    <ul style="padding-bottom: 2rem;">
+      <li><a class= "nav-item" href="Index.html">Home</a></li>
+      <li><a class= "nav-item" href="aboutUs.html">About Us</a></li>
+      <li><a class= "nav-item" href="learnMore.html">Learn More</a></li>
+      <li><a class= "nav-item" href="healthy.html">Health Checker</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+	<h1>Meal Healthiness Checker</h1>
+	
+	<form id="breakfast-form">
+        <fieldset>
+            <legend>Breakfast</legend>
+            <label for="breakfast-meal">What did you have for breakfast?</label>
+            <input type="text" id="breakfast-meal" name="breakfast-meal"><br><br>
+            <label for="breakfast-veggies">Did your breakfast include any veggies?</label>
+            <input type="radio" id="breakfast-veggies-yes" name="breakfast-veggies" value="yes">
+            <label for="breakfast-veggies-yes">Yes</label>
+            <input type="radio" id="breakfast-veggies-no" name="breakfast-veggies" value="no">
+            <label for="breakfast-veggies-no">No</label><br><br>
+            <label for="breakfast-protein">Did your breakfast include any protein?</label>
+            <input type="radio" id="breakfast-protein-yes" name="breakfast-protein" value="yes">
+            <label for="breakfast-protein-yes">Yes</label>
+            <input type="radio" id="breakfast-protein-no" name="breakfast-protein" value="no">
+            <label for="breakfast-protein-no">No</label><br><br>
+            <button type="submit" onclick="checkHealthiness('breakfast')">Check Healthiness</button>
+            <p id="breakfast-result"></p>
+            
+        </fieldset>
+        
+    </form>
+   
+    <form id="lunch-form">
+        <fieldset>
+            <legend>Lunch</legend>
+            <label for="lunch-meal">What did you have for lunch?</label>
+            <input type="text" id="lunch-meal" name="lunch-meal"><br><br>
+            <label for="lunch-veggies">Did your lunch include any veggies?</label>
+            <input type="radio" id="lunch-veggies-yes" name="lunch-veggies" value="yes">
+            <label for="lunch-veggies-yes">Yes</label>
+            <input type="radio" id="lunch-veggies-no" name="lunch-veggies" value="no">
+            <label for="lunch-veggies-no">No</label><br><br>
+            <label for="lunch-protein">Did your lunch include any protein?</label>
+            <input type="radio" id="lunch-protein-yes" name="lunch-protein" value="yes">
+            <label for="lunch-protein-yes">Yes</label>
+            <input type="radio" id="lunch-protein-no" name="lunch-protein" value="no">
+            <label for="lunch-protein-no">No</label><br><br>
+            <button type="submit" onclick="checkHealthiness('lunch')">Check Healthiness</button>
+            <p id="lunch-result"></p>
+        </fieldset>
+    </form>
+    
+    <form id="dinner-form">
+        <fieldset>
+          <legend>Dinner</legend>
+          <label for="dinner-meal">What did you have for dinner?</label>
+          <input type="text" id="dinner-meal" name="dinner-meal"><br><br>
+          <label for="dinner-veggies">Did your dinner include any veggies?</label>
+          <input type="radio" id="dinner-veggies-yes" name="dinner-veggies" value="yes">
+          <label for="dinner-veggies-yes">Yes</label>
+          <input type="radio" id="dinner-veggies-no" name="dinner-veggies" value="no">
+          <label for="dinner-veggies-no">No</label><br><br>
+          <label for="dinner-protein">Did your dinner include any protein?</label>
+          <input type="radio" id="dinner-protein-yes" name="dinner-protein" value="yes">
+          <label for="dinner-protein-yes">Yes</label>
+          <input type="radio" id="dinner-protein-no" name="dinner-protein" value="no">
+          <label for="dinner-protein-no">No</label><br><br>
+          <button type="submit" onclick="checkHealthiness('dinner')">Check Healthiness</button>
+          <p id="dinner-result"></p>
+        </fieldset>
+      </form>
+      
+      <script>
+        function checkHealthiness(mealType) {
+          var veggiesYes = document.getElementById(`${mealType}-veggies-yes`).checked;
+          var proteinYes = document.getElementById(`${mealType}-protein-yes`).checked;
+          var result = document.getElementById(`${mealType}-result`);
+      
+          if (veggiesYes && proteinYes) {
+            result.innerHTML = "YOUR MEAL IS HEALTHY";
+          } 
+          else if(veggiesYes){
+            result.innerHTML = "YOUR MEAL IS KIND OF HEALTHY";
+          }
+          else if(proteinYes){
+            result.innerHTML = "YOUR MEAL IS KIND OF HEALTHY";
+          }
+          else{
+            result.innerHTML = "YOUR MEAL IS NOT HEALTHY";
+          }
+          event.preventDefault();
+        }
+      </script>
+      <footer>
+      <p class="footer1">&copy; 2023 RadiantLife All rights reserved.</p>
+      <p class="footer2">By Amrith Mohan and Akshay Maram</p>
+        </footer>
+      </body>
+      </html>

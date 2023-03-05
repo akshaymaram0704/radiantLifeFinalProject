@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>Nutritional Wellness</title>
+    <link rel="stylesheet" type="text/css" href="styles_NutriWell.css"> 
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 50px auto;
+			max-width: 800px;
+		}
+
+		.box {
+			position: relative;
+			width: 300px;
+			height: 300px;
+			margin: 40px;
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			cursor: pointer;
+			transition: transform 0.2s ease-in-out;
+		}
+
+		.box:hover {
+			transform: scale(1.1);
+		}
+
+		.box img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.description {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 10px;
+			background-color: rgba(255, 255, 255, 0.8);
+			font-size: 14px;
+			line-height: 1.5;
+			text-align: justify;
+			transition: opacity 0.2s ease-in-out;
+			opacity: 0;
+		}
+
+		.box:hover .description {
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+    <header>
+		<h1>Radiant Life</h1>
+		<nav>
+			<ul>
+				<li><a class= "nav-item" href="Index.html">Home</a></li>
+				<li><a class= "nav-item" href="aboutUs.html">About Us</a></li>
+				<li><a class= "nav-item" href="learnMore.html">Learn More</a></li>
+				<li><a class= "nav-item" href="healthy.html">Health Checker</a></li>
+			</ul>
+		</nav>
+	</header>
+    <center>
+	<h1>Nutritional Wellness</h1>
+    </center>
+	<div class="container">
+		<div class="box">
+			<a href="https://www.weightwatchers.com/us/blog/weight-loss/intermittent-fasting?cid%3Dsem%26account%3DWWUS%26tracker%3D$$=&g_acctid=243-229-0722&g_adgroupid=&g_adid=&g_adtype=none&g_campaign=GGL_Exact_Aud-Prospecting_PMax_All&g_campaignid=15249513772&g_keyword=&g_keywordid=&g_network=x&utm_campaign=pmax&gclid=Cj0KCQiA9YugBhCZARIsAACXxeIWmmuuTHCGEtVBQacNgHFUGzZL6Pp8E_jPEX8UFD8kCyOYy29L5KkaAhTSEALw_wcB&gclsrc=aw.ds">
+				<img src="hacksImages/intermittent.jpeg" alt="Intermittent Fasting">
+				<div class="description">
+				This resource explains the benefits of intermittent fasting on one's diet and Wellness
+				</div>
+                <center>
+                <h2>Intermittent Fasting</h2>
+                </center>
+               
+			</a>
+		</div>
+		<div class="box">
+			<a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8153354/#:~:text=Recent%20studies%20utilizing%20Low%2Dcarbohydrate,epigenetic%20profiles%2C%20alter%20the%20microbiome>
+				<img src="hacksImages/keto.webp" alt="Keto Diet">
+				<div class="description">
+					This link takes you to a site which explains the benefits of a keto diet.
+				</div>
+                <center>
+                    <h2>Keto Diet</h2>
+                    </center>
+			</a>
+		</div>
+		<div class="box">
+			<a href="https://www.womenshealthmag.com/weight-loss/a22715081/carnivore-diet/?utm_source=google&utm_medium=cpc&utm_campaign=arb_ga_whm_md_dsa_prog_org_us_a22715081&gclid=Cj0KCQiA9YugBhCZARIsAACXxeJKXVHtLsx3uyMvtOXV2aKTrBF_TCZaBF3PzpJ50v50zGSLJrZhKi4aAomdEALw_wcB">
+				<img src="hacksImages/carnivore.webp" alt="Carnivore Diet">
+				<div class="description">
+					This link takes you to a site which explains the benefits of a meat-only diet
+				</div>
+                <center>
+                 <h2>Carnivore Diet</h2>
+                </center>
+			</a>
+		</div>
+		<div class="box">
+			<a href="https://www.rush.edu/news/health-benefits-vegan-diet">
+				<img src="hacksImages/vegan3.webp" alt="Veganism">
+				<div class="description">
+					This resource explains the positive effect that a vegan diet has on one's body
+				</div>
+                <center>
+                    <h2>Veganism</h2>
+                </center>
+			</a>
+		</div>
+		
+	</div>
+	<center>
+		<body>
+		
+			<h1>Take Notes</h1>
+			<form>
+			  <label for="note">Note:</label><br>
+			  <textarea id="note" name="note" rows="4" cols="50"></textarea>
+			</form>
+		  </body>
+			
+	</center>
+	<footer>
+        <p class="footer1">&copy; 2023 RadiantLife All rights reserved.</p>
+        <p class="footer2">By Amrith Mohan and Akshay Maram</p>
+      </footer>
+	
+</body>
+</html>

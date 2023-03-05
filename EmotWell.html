@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>Emotional Wellness</title>
+    <link rel="stylesheet" type="text/css" href="styles_EmotWell.css"> 
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 50px auto;
+			max-width: 800px;
+		}
+
+		.box {
+			position: relative;
+			width: 300px;
+			height: 300px;
+			margin: 40px;
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			cursor: pointer;
+			transition: transform 0.2s ease-in-out;
+		}
+
+		.box:hover {
+			transform: scale(1.1);
+		}
+
+		.box img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.description {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 10px;
+			background-color: rgba(255, 255, 255, 0.8);
+			font-size: 14px;
+			line-height: 1.5;
+			text-align: justify;
+			transition: opacity 0.2s ease-in-out;
+			opacity: 0;
+		}
+
+		.box:hover .description {
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	
+	<header>
+		<h1>Radiant Life</h1>
+		<nav>
+			<ul>
+				<li><a class= "nav-item" href="Index.html">Home</a></li>
+				<li><a class= "nav-item" href="aboutUs.html">About Us</a></li>
+				<li><a class= "nav-item" href="learnMore.html">Learn More</a></li>
+				<li><a class= "nav-item" href="healthy.html">Health Checker</a></li>
+			</ul>
+		</nav>
+	</header>
+    <center>
+	<h1>Emotional Wellness</h1>
+    </center>
+	<div class="container">
+		<div class="box">
+			<a href=https://www.oprahdaily.com/life/health/a27507222/how-to-stop-being-sad>
+				<img src="hacksImages/sadFinal.webp" alt="Feeling Sad">
+				<div class="description">
+					This resource helps you navigate your emotions when you are sad.
+				</div>
+                <center>
+                <h2>Feeling Sad</h2>
+                </center>
+               
+			</a>
+		</div>
+		<div class="box">
+			<a href=https://www.wikihow.com/Manage-Your-Excitement>
+				<img src="hacksImages/excitedFinal.png" alt="Feeling Excited">
+				<div class="description">
+					This resource helps you navigate your emotions when you are feeling excited.
+				</div>
+                <center>
+                    <h2>Feeling Excited</h2>
+                    </center>
+			</a>
+		</div>
+		<div class="box">
+			<a href="https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/anger-management/art-20045434">
+				<img src="hacksImages/angry.jpeg" alt="Feeling Angry">
+				<div class="description">
+					This resource helps you navigate your emotions when you are angry.
+				</div>
+                <center>
+                 <h2>Feeling Angry</h2>
+                </center>
+			</a>
+		</div>
+		<div class="box">
+			<a href="https://adaa.org/tips">
+				<img src="hacksImages/anxious2.png" alt="Feeling Anxious">
+				<div class="description">
+					This resource helps you navigate your emotions when you are anxious.
+				</div>
+                <center>
+                    <h2>Feeling Anxious</h2>
+                </center>
+			</a>
+		</div>
+	</div>
+	<center>
+		<body>
+		
+			<h1>Take Notes</h1>
+			<form>
+			  <label for="note">Note:</label><br>
+			  <textarea id="note" name="note" rows="4" cols="50"></textarea>
+			</form>
+		  </body>
+			
+	</center>
+	<footer>
+        <p class="footer1">&copy; 2023 RadiantLife All rights reserved.</p>
+        <p class="footer2">By Amrith Mohan and Akshay Maram</p>
+      </footer>
+</body>
+</html>

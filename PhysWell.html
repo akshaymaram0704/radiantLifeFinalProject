@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>Physical Wellness</title>
+    <link rel="stylesheet" type="text/css" href="styles_PhysWell.css"> 
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 50px auto;
+			max-width: 800px;
+		}
+
+		.box {
+			position: relative;
+			width: 300px;
+			height: 300px;
+			margin: 40px;
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			cursor: pointer;
+			transition: transform 0.2s ease-in-out;
+		}
+
+		.box:hover {
+			transform: scale(1.1);
+		}
+
+		.box img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.description {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 10px;
+			background-color: rgba(255, 255, 255, 0.8);
+			font-size: 14px;
+			line-height: 1.5;
+			text-align: justify;
+			transition: opacity 0.2s ease-in-out;
+			opacity: 0;
+		}
+
+		.box:hover .description {
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+    <header>
+		<h1>Radiant Life</h1>
+		<nav>
+			<ul>
+				<li><a class= "nav-item" href="Index.html">Home</a></li>
+				<li><a class= "nav-item" href="aboutUs.html">About Us</a></li>
+				<li><a class= "nav-item" href="learnMore.html">Learn More</a></li>
+				<li><a class= "nav-item" href="healthy.html">Health Checker</a></li>
+			</ul>
+		</nav>
+	</header>
+    <center>
+	<h1>Physical Wellness</h1>
+    </center>
+	<div class="container">
+		<div class="box">
+			<a href=https://sph.umich.edu/pursuit/2020posts/why-sleep-is-so-important-to-your-health.html>
+				<img src="hacksImages/sleep2.jpeg" alt="Sleep">
+				<div class="description">
+					This resource explains the importance of sleep and ways it chnages one's lifestyle and daily performance.
+				</div>
+                <center>
+                <h2>Sleep</h2>
+                </center>
+               
+			</a>
+		</div>
+		<div class="box">
+			<a href=https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20048389>
+				<img src="hacksImages/weigths.jpeg" alt="Working Out">
+				<div class="description">
+					This link takes you to a site which explains the importance of working out for one's well-being
+				</div>
+                <center>
+                    <h2>Working Out</h2>
+                    </center>
+			</a>
+		</div>
+		<div class="box">
+			<a href="https://www.mayoclinic.org/tests-procedures/meditation/in-depth/meditation/art-20045858">
+				<img src="hacksImages/meditation.webp" alt="Meditation">
+				<div class="description">
+					This link takes you to a site which explains the benefits of meditation and yoga.
+				</div>
+                <center>
+                 <h2>Meditation</h2>
+                </center>
+			</a>
+		</div>
+		<div class="box">
+			<a href="https://health.clevelandclinic.org/the-many-benefits-of-a-cardio-workout/">
+				<img src="hacksImages/running.jpeg" alt="Cardio">
+				<div class="description">
+					This resource explains the positive effect that cardio has on one's body and physical health.
+				</div>
+                <center>
+                    <h2>Cardio</h2>
+                </center>
+			</a>
+		</div>
+	</div>
+	<center>
+		<body>
+		
+			<h1>Take Notes</h1>
+			<form>
+			  <label for="note">Note:</label><br>
+			  <textarea id="note" name="note" rows="4" cols="50"></textarea>
+			</form>
+		  </body>
+			
+	</center>
+	<footer>
+        <p class="footer1">&copy; 2023 RadiantLife All rights reserved.</p>
+        <p class="footer2">By Amrith Mohan and Akshay Maram</p>
+      </footer>
+</body>
+</html>
